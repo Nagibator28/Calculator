@@ -18,10 +18,8 @@ namespace Calculator
         }
         private double StringToDouble(string text)
         {
-            double result;
-            double.TryParse(text, out result);
+            return double.Parse(text);
 
-            return result;
         }
 
         private void Calculate(object sender, EventArgs e)
@@ -41,7 +39,7 @@ namespace Calculator
                     break;
 
                 case "Multiplication":
-                    result = firstArgument*secondArgument;
+                    result = firstArgument * secondArgument;
                     break;
 
                 case "Division":
@@ -58,6 +56,7 @@ namespace Calculator
             }
 
             Result.Text = Convert.ToString(result);
+
         }
     }
 }
