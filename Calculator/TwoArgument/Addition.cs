@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.TwoArgument
 {
-    class Addition
+    public class Addition : IOperation
     {
         public double Calculate(double firstArgument, double secondArgument)
         {

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.TwoArgument
 {
-    class Division
+    public class Multiplication : IOperation
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            return firstArgument / secondArgument;
+            return firstArgument * secondArgument;
         }
     }
 }

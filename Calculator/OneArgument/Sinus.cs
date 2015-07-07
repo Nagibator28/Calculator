@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.OneArgument
 {
-    class Sinus
+    public class Sinus : IOperation
     {
         public double Calculate(double firstArgument)
         {
