@@ -37,6 +37,7 @@
             this.FirstArgument = new System.Windows.Forms.TextBox();
             this.Sinus = new System.Windows.Forms.Button();
             this.Module = new System.Windows.Forms.Button();
+            this.Cosinus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Addition
@@ -47,7 +48,7 @@
             this.Addition.TabIndex = 0;
             this.Addition.Text = "+";
             this.Addition.UseVisualStyleBackColor = true;
-            this.Addition.Click += new System.EventHandler(this.Calculate);
+            this.Addition.Click += new System.EventHandler(this.CalculateTwoArgument);
             // 
             // Subtraction
             // 
@@ -57,7 +58,7 @@
             this.Subtraction.TabIndex = 1;
             this.Subtraction.Text = "-";
             this.Subtraction.UseVisualStyleBackColor = true;
-            this.Subtraction.Click += new System.EventHandler(this.Calculate);
+            this.Subtraction.Click += new System.EventHandler(this.CalculateTwoArgument);
             // 
             // Multiplication
             // 
@@ -67,7 +68,7 @@
             this.Multiplication.TabIndex = 2;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = true;
-            this.Multiplication.Click += new System.EventHandler(this.Calculate);
+            this.Multiplication.Click += new System.EventHandler(this.CalculateTwoArgument);
             // 
             // Division
             // 
@@ -77,7 +78,7 @@
             this.Division.TabIndex = 3;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
-            this.Division.Click += new System.EventHandler(this.Calculate);
+            this.Division.Click += new System.EventHandler(this.CalculateTwoArgument);
             // 
             // Result
             // 
@@ -111,7 +112,7 @@
             this.Sinus.TabIndex = 7;
             this.Sinus.Text = "Sin";
             this.Sinus.UseVisualStyleBackColor = true;
-            this.Sinus.Click += new System.EventHandler(this.CalculateSingleArgument);
+            this.Sinus.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
             // Module
             // 
@@ -121,13 +122,24 @@
             this.Module.TabIndex = 8;
             this.Module.Text = "|Module|";
             this.Module.UseVisualStyleBackColor = true;
-            this.Module.Click += new System.EventHandler(this.CalculateSingleArgument);
+            this.Module.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Cosinus
+            // 
+            this.Cosinus.Location = new System.Drawing.Point(210, 60);
+            this.Cosinus.Name = "Cosinus";
+            this.Cosinus.Size = new System.Drawing.Size(60, 37);
+            this.Cosinus.TabIndex = 9;
+            this.Cosinus.Text = "Cos";
+            this.Cosinus.UseVisualStyleBackColor = true;
+            this.Cosinus.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(430, 153);
+            this.Controls.Add(this.Cosinus);
             this.Controls.Add(this.Module);
             this.Controls.Add(this.Sinus);
             this.Controls.Add(this.FirstArgument);
@@ -157,6 +169,7 @@
         private System.Windows.Forms.TextBox FirstArgument;
         private System.Windows.Forms.Button Sinus;
         private System.Windows.Forms.Button Module;
+        private System.Windows.Forms.Button Cosinus;
     }
 }
 

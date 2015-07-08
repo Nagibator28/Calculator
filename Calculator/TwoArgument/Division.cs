@@ -10,7 +10,14 @@ namespace Calculator.TwoArgument
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            return firstArgument / secondArgument;
+            if (secondArgument == 0)
+            {
+                throw new Exception("Divizion by zero");
+            }
+            else
+            {
+                return firstArgument/secondArgument;
+            }
         }
     }
 }

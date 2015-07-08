@@ -18,6 +18,9 @@ namespace Calculator.OneArgument
                 case "Module": 
                     return new Module();
                     break;
+                case "Cosinus":
+                    return new Cosinus();
+                    break;
                 default: throw new Exception("Unknown operation");
             }
         }
