@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using Calculator.TwoArgument;
 using Calculator.OneArgument;
+using Calculator.TwoArgument;
 
 namespace Calculator
 {
@@ -11,6 +11,7 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
         private double StringToDouble(string text)
         {
             return double.Parse(text);

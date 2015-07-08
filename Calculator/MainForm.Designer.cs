@@ -1,11 +1,16 @@
-﻿namespace Calculator
+﻿using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Calculator
 {
     partial class MainForm
     {
         /// <summary>
         /// Требуется переменная конструктора.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Освободить все используемые ресурсы.
@@ -28,150 +33,150 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Addition = new System.Windows.Forms.Button();
-            this.Subtraction = new System.Windows.Forms.Button();
-            this.Multiplication = new System.Windows.Forms.Button();
-            this.Division = new System.Windows.Forms.Button();
-            this.Result = new System.Windows.Forms.TextBox();
-            this.SecondArgument = new System.Windows.Forms.TextBox();
-            this.FirstArgument = new System.Windows.Forms.TextBox();
-            this.Sinus = new System.Windows.Forms.Button();
-            this.Module = new System.Windows.Forms.Button();
-            this.Cosinus = new System.Windows.Forms.Button();
-            this.Factorial = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Radical = new System.Windows.Forms.Button();
+            this.Addition = new Button();
+            this.Subtraction = new Button();
+            this.Multiplication = new Button();
+            this.Division = new Button();
+            this.Result = new TextBox();
+            this.SecondArgument = new TextBox();
+            this.FirstArgument = new TextBox();
+            this.Sinus = new Button();
+            this.Module = new Button();
+            this.Cosinus = new Button();
+            this.Factorial = new Button();
+            this.button1 = new Button();
+            this.Radical = new Button();
             this.SuspendLayout();
             // 
             // Addition
             // 
-            this.Addition.Location = new System.Drawing.Point(12, 60);
+            this.Addition.Location = new Point(12, 60);
             this.Addition.Name = "Addition";
-            this.Addition.Size = new System.Drawing.Size(60, 36);
+            this.Addition.Size = new Size(60, 36);
             this.Addition.TabIndex = 0;
             this.Addition.Text = "+";
             this.Addition.UseVisualStyleBackColor = true;
-            this.Addition.Click += new System.EventHandler(this.CalculateTwoArgument);
+            this.Addition.Click += new EventHandler(this.CalculateTwoArgument);
             // 
             // Subtraction
             // 
-            this.Subtraction.Location = new System.Drawing.Point(78, 60);
+            this.Subtraction.Location = new Point(78, 60);
             this.Subtraction.Name = "Subtraction";
-            this.Subtraction.Size = new System.Drawing.Size(60, 37);
+            this.Subtraction.Size = new Size(60, 37);
             this.Subtraction.TabIndex = 1;
             this.Subtraction.Text = "-";
             this.Subtraction.UseVisualStyleBackColor = true;
-            this.Subtraction.Click += new System.EventHandler(this.CalculateTwoArgument);
+            this.Subtraction.Click += new EventHandler(this.CalculateTwoArgument);
             // 
             // Multiplication
             // 
-            this.Multiplication.Location = new System.Drawing.Point(12, 102);
+            this.Multiplication.Location = new Point(12, 102);
             this.Multiplication.Name = "Multiplication";
-            this.Multiplication.Size = new System.Drawing.Size(60, 37);
+            this.Multiplication.Size = new Size(60, 37);
             this.Multiplication.TabIndex = 2;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = true;
-            this.Multiplication.Click += new System.EventHandler(this.CalculateTwoArgument);
+            this.Multiplication.Click += new EventHandler(this.CalculateTwoArgument);
             // 
             // Division
             // 
-            this.Division.Location = new System.Drawing.Point(144, 60);
+            this.Division.Location = new Point(144, 60);
             this.Division.Name = "Division";
-            this.Division.Size = new System.Drawing.Size(60, 37);
+            this.Division.Size = new Size(60, 37);
             this.Division.TabIndex = 3;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
-            this.Division.Click += new System.EventHandler(this.CalculateTwoArgument);
+            this.Division.Click += new EventHandler(this.CalculateTwoArgument);
             // 
             // Result
             // 
-            this.Result.Location = new System.Drawing.Point(339, 12);
+            this.Result.Location = new Point(339, 12);
             this.Result.Multiline = true;
             this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(82, 129);
+            this.Result.Size = new Size(82, 129);
             this.Result.TabIndex = 4;
             // 
             // SecondArgument
             // 
-            this.SecondArgument.Location = new System.Drawing.Point(170, 12);
+            this.SecondArgument.Location = new Point(170, 12);
             this.SecondArgument.Multiline = true;
             this.SecondArgument.Name = "SecondArgument";
-            this.SecondArgument.Size = new System.Drawing.Size(152, 41);
+            this.SecondArgument.Size = new Size(152, 41);
             this.SecondArgument.TabIndex = 5;
             // 
             // FirstArgument
             // 
-            this.FirstArgument.Location = new System.Drawing.Point(12, 12);
+            this.FirstArgument.Location = new Point(12, 12);
             this.FirstArgument.Multiline = true;
             this.FirstArgument.Name = "FirstArgument";
-            this.FirstArgument.Size = new System.Drawing.Size(152, 41);
+            this.FirstArgument.Size = new Size(152, 41);
             this.FirstArgument.TabIndex = 6;
             // 
             // Sinus
             // 
-            this.Sinus.Location = new System.Drawing.Point(78, 102);
+            this.Sinus.Location = new Point(78, 102);
             this.Sinus.Name = "Sinus";
-            this.Sinus.Size = new System.Drawing.Size(60, 36);
+            this.Sinus.Size = new Size(60, 36);
             this.Sinus.TabIndex = 7;
             this.Sinus.Text = "Sin";
             this.Sinus.UseVisualStyleBackColor = true;
-            this.Sinus.Click += new System.EventHandler(this.CalculateOneArgument);
+            this.Sinus.Click += new EventHandler(this.CalculateOneArgument);
             // 
             // Module
             // 
-            this.Module.Location = new System.Drawing.Point(144, 102);
+            this.Module.Location = new Point(144, 102);
             this.Module.Name = "Module";
-            this.Module.Size = new System.Drawing.Size(60, 36);
+            this.Module.Size = new Size(60, 36);
             this.Module.TabIndex = 8;
             this.Module.Text = "|Module|";
             this.Module.UseVisualStyleBackColor = true;
-            this.Module.Click += new System.EventHandler(this.CalculateOneArgument);
+            this.Module.Click += new EventHandler(this.CalculateOneArgument);
             // 
             // Cosinus
             // 
-            this.Cosinus.Location = new System.Drawing.Point(210, 60);
+            this.Cosinus.Location = new Point(210, 60);
             this.Cosinus.Name = "Cosinus";
-            this.Cosinus.Size = new System.Drawing.Size(60, 37);
+            this.Cosinus.Size = new Size(60, 37);
             this.Cosinus.TabIndex = 9;
             this.Cosinus.Text = "Cos";
             this.Cosinus.UseVisualStyleBackColor = true;
-            this.Cosinus.Click += new System.EventHandler(this.CalculateOneArgument);
+            this.Cosinus.Click += new EventHandler(this.CalculateOneArgument);
             // 
             // Factorial
             // 
-            this.Factorial.Location = new System.Drawing.Point(210, 102);
+            this.Factorial.Location = new Point(210, 102);
             this.Factorial.Name = "Factorial";
-            this.Factorial.Size = new System.Drawing.Size(60, 36);
+            this.Factorial.Size = new Size(60, 36);
             this.Factorial.TabIndex = 10;
             this.Factorial.Text = "n!";
             this.Factorial.UseVisualStyleBackColor = true;
-            this.Factorial.Click += new System.EventHandler(this.CalculateOneArgument);
+            this.Factorial.Click += new EventHandler(this.CalculateOneArgument);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(276, 61);
+            this.button1.Location = new Point(276, 61);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 36);
+            this.button1.Size = new Size(60, 36);
             this.button1.TabIndex = 11;
             this.button1.Text = "Pow";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.CalculateTwoArgument);
+            this.button1.Click += new EventHandler(this.CalculateTwoArgument);
             // 
             // Radical
             // 
-            this.Radical.Location = new System.Drawing.Point(276, 102);
+            this.Radical.Location = new Point(276, 102);
             this.Radical.Name = "Radical";
-            this.Radical.Size = new System.Drawing.Size(60, 36);
+            this.Radical.Size = new Size(60, 36);
             this.Radical.TabIndex = 12;
             this.Radical.Text = "Sqrt";
             this.Radical.UseVisualStyleBackColor = true;
-            this.Radical.Click += new System.EventHandler(this.CalculateOneArgument);
+            this.Radical.Click += new EventHandler(this.CalculateOneArgument);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(430, 153);
+            this.AutoScaleDimensions = new SizeF(6F, 13F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(430, 153);
             this.Controls.Add(this.Radical);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Factorial);
@@ -185,7 +190,7 @@
             this.Controls.Add(this.Multiplication);
             this.Controls.Add(this.Subtraction);
             this.Controls.Add(this.Addition);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Calculator";
@@ -196,19 +201,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Addition;
-        private System.Windows.Forms.Button Subtraction;
-        private System.Windows.Forms.Button Multiplication;
-        private System.Windows.Forms.Button Division;
-        private System.Windows.Forms.TextBox Result;
-        private System.Windows.Forms.TextBox SecondArgument;
-        private System.Windows.Forms.TextBox FirstArgument;
-        private System.Windows.Forms.Button Sinus;
-        private System.Windows.Forms.Button Module;
-        private System.Windows.Forms.Button Cosinus;
-        private System.Windows.Forms.Button Factorial;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Radical;
+        private Button Addition;
+        private Button Subtraction;
+        private Button Multiplication;
+        private Button Division;
+        private TextBox Result;
+        private TextBox SecondArgument;
+        private TextBox FirstArgument;
+        private Button Sinus;
+        private Button Module;
+        private Button Cosinus;
+        private Button Factorial;
+        private Button button1;
+        private Button Radical;
     }
 }
 
