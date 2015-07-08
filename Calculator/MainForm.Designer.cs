@@ -39,6 +39,8 @@
             this.Module = new System.Windows.Forms.Button();
             this.Cosinus = new System.Windows.Forms.Button();
             this.Factorial = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Addition
@@ -83,10 +85,10 @@
             // 
             // Result
             // 
-            this.Result.Location = new System.Drawing.Point(334, 12);
+            this.Result.Location = new System.Drawing.Point(339, 12);
             this.Result.Multiline = true;
             this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(87, 127);
+            this.Result.Size = new System.Drawing.Size(82, 129);
             this.Result.TabIndex = 4;
             // 
             // SecondArgument
@@ -145,11 +147,32 @@
             this.Factorial.UseVisualStyleBackColor = true;
             this.Factorial.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(276, 61);
+            this.button1.Name = "Pow";
+            this.button1.Size = new System.Drawing.Size(60, 36);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Pow";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.CalculateTwoArgument);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(276, 102);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(60, 36);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(430, 153);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Factorial);
             this.Controls.Add(this.Cosinus);
             this.Controls.Add(this.Module);
@@ -183,6 +206,8 @@
         private System.Windows.Forms.Button Module;
         private System.Windows.Forms.Button Cosinus;
         private System.Windows.Forms.Button Factorial;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
