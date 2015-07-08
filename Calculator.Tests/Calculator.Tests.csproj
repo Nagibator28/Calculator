@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\FactorialTests.cs" />
     <Compile Include="OneArgument\CosinusTests.cs" />
     <Compile Include="OneArgument\ModuleTests.cs" />
     <Compile Include="OneArgument\RadicalTests.cs" />
