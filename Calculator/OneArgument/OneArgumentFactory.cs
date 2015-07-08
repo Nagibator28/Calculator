@@ -4,9 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.OneArgument
 {
     class OneArgumentFactory
     {
+        public static ISingleOperation CreateCalculator(string operation)
+        {
+            switch (operation)
+            {
+                case "Sinus": 
+                    return new Sinus();
+                    break;
+                case "Module": 
+                    return new Module();
+                    break;
+                default: throw new Exception("Unknown operation");
+            }
+        }
     }
 }
