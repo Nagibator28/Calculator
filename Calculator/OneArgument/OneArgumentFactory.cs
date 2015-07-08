@@ -24,6 +24,9 @@ namespace Calculator.OneArgument
                 case "Factorial":
                     return new Factorial();
                     break;
+                case "Radical":
+                    return new Radical();
+                    break;
                 default: throw new Exception("Unknown operation");
             }
         }
