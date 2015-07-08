@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.OneArgument
 {
-    public class Sinus : IOperation
+    public class Sinus : ISingleOperation
     {
         public double Calculate(double firstArgument)
         {

@@ -111,7 +111,7 @@
             this.Sinus.TabIndex = 7;
             this.Sinus.Text = "Sin";
             this.Sinus.UseVisualStyleBackColor = true;
-            this.Sinus.Click += new System.EventHandler(this.Calculate);
+            this.Sinus.Click += new System.EventHandler(this.CalculateSingleArgument);
             // 
             // Module
             // 
@@ -121,7 +121,7 @@
             this.Module.TabIndex = 8;
             this.Module.Text = "|Module|";
             this.Module.UseVisualStyleBackColor = true;
-            this.Module.Click += new System.EventHandler(this.Calculate);
+            this.Module.Click += new System.EventHandler(this.CalculateSingleArgument);
             // 
             // MainForm
             // 
