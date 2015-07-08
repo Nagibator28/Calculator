@@ -42,10 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CosinusTests.cs" />
-    <Compile Include="ModuleTests.cs" />
+    <Compile Include="OneArgument\CosinusTests.cs" />
+    <Compile Include="OneArgument\ModuleTests.cs" />
     <Compile Include="OneArgument\RadicalTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OneArgument\SinusTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
