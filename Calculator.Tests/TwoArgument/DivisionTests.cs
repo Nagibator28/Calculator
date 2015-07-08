@@ -15,7 +15,13 @@ namespace Calculator.Tests.TwoArgument
             var calculator = new Division();
             var testresult = calculator.Calculate(firstArgument, secondArgument);
             Assert.AreEqual(result, testresult);
-
+        }
+        [Test]
+        [ExpectedException(typeof (Exception))]
+        public void DivisionTestByZero()
+        {
+            var calculator = new Division();
+            var result = calculator.Calculate(3, 0);
         }
     }
 }
