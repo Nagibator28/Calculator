@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TwoArgument\Division.cs" />
+    <Compile Include="TwoArgument\PowTests.cs" />
     <Compile Include="TwoArgument\SubtractionTests.cs" />
     <Compile Include="TwoArgument\AdditionTests.cs" />
     <Compile Include="OneArgument\FactorialTests.cs" />
