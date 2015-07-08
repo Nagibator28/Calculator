@@ -38,6 +38,7 @@
             this.Sinus = new System.Windows.Forms.Button();
             this.Module = new System.Windows.Forms.Button();
             this.Cosinus = new System.Windows.Forms.Button();
+            this.Factorial = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Addition
@@ -134,11 +135,22 @@
             this.Cosinus.UseVisualStyleBackColor = true;
             this.Cosinus.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
+            // Factorial
+            // 
+            this.Factorial.Location = new System.Drawing.Point(210, 102);
+            this.Factorial.Name = "Factorial";
+            this.Factorial.Size = new System.Drawing.Size(60, 36);
+            this.Factorial.TabIndex = 10;
+            this.Factorial.Text = "n!";
+            this.Factorial.UseVisualStyleBackColor = true;
+            this.Factorial.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(430, 153);
+            this.Controls.Add(this.Factorial);
             this.Controls.Add(this.Cosinus);
             this.Controls.Add(this.Module);
             this.Controls.Add(this.Sinus);
@@ -170,6 +182,7 @@
         private System.Windows.Forms.Button Sinus;
         private System.Windows.Forms.Button Module;
         private System.Windows.Forms.Button Cosinus;
+        private System.Windows.Forms.Button Factorial;
     }
 }
 

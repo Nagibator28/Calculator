@@ -21,6 +21,9 @@ namespace Calculator.OneArgument
                 case "Cosinus":
                     return new Cosinus();
                     break;
+                case "Factorial":
+                    return new Factorial();
+                    break;
                 default: throw new Exception("Unknown operation");
             }
         }
