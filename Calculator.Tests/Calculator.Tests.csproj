@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CosinusTests.cs" />
+    <Compile Include="ModuleTests.cs" />
     <Compile Include="OneArgument\RadicalTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
