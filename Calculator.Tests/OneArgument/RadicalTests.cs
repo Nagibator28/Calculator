@@ -17,5 +17,11 @@ namespace Calculator.Tests.OneArgument
             Assert.AreEqual(1, 1);
 
         }
+        [Test]
+        public void SqrtTestsNegative()
+        {
+            var calculator = new Radical();
+            var result = calculator.Calculate(-3);
+        }
     }
 }
