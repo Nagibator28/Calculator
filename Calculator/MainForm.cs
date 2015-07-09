@@ -16,9 +16,15 @@ namespace Calculator
         private double StringToDouble(string text)
         {
             double result;
-            return result = double.Parse(text);
-            return double.Parse(text);
-        }
+            if (double.TryParse(text, out result))
+            {
+                return result;
+            }
+            else
+            {
+                throw new Exception("Eror");
+            }
+         }
 
         private void SortingMassiv(object sender, EventArgs e)
         {

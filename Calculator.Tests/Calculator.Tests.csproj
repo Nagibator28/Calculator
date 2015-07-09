@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FactoryTests.cs" />
+    <Compile Include="SortingOfMassiv\BubbleSortingTests.cs" />
     <Compile Include="TwoArgument\DivisionTests.cs" />
     <Compile Include="TwoArgument\MultiplicationTests.cs" />
     <Compile Include="TwoArgument\PowTests.cs" />
