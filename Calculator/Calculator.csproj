@@ -44,11 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SortingOfMassiv\BubbleSorting.cs" />
     <Compile Include="OneArgument\Factorial.cs" />
     <Compile Include="OneArgument\Cosinus.cs" />
     <Compile Include="OneArgument\OneArgumentFactory.cs" />
     <Compile Include="OneArgument\ISingleOperation.cs" />
     <Compile Include="OneArgument\Radical.cs" />
+    <Compile Include="SortingOfMassiv\ISorting.cs" />
+    <Compile Include="SortingOfMassiv\SelectionSorting.cs" />
+    <Compile Include="SortingOfMassiv\SortingOfMassivFactory.cs" />
     <Compile Include="TwoArgument\Pow.cs" />
     <Compile Include="TwoArgument\TwoArgumentFactory.cs" />
     <Compile Include="TwoArgument\IOperation.cs" />

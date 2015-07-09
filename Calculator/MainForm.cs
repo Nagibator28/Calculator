@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Calculator.OneArgument;
 using Calculator.TwoArgument;
+using Calculator.SortingOfMassiv;
 
 namespace Calculator
 {
@@ -15,6 +16,38 @@ namespace Calculator
         private double StringToDouble(string text)
         {
             return double.Parse(text);
+        }
+
+        private void SortingMassiv(object sender, EventArgs e)
+        {
+           string [] split = FirstArgument.Text.Split(new Char[]{' ', ';'});
+           double[] array = new double[split.Length];
+
+            for (int i = 0; i < split.Length; i++)
+            {
+                array[i] = StringToDouble(split[i]);
+            }
+
+            string operation = (((Button) sender).Name);
+            var op = SortingOfMassivFactory.CreateSorting(operation);
+            double[] resultDoubleArray = op.Sort(array);
+
+            string[] resultStringArray = new string[split.Length];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                resultStringArray[i] = Convert.ToString(resultDoubleArray[i]);
+            }
+
+            string resultString = "";
+
+            for (int i = 0; i < resultStringArray.Length; i++)
+            {
+                resultString += resultStringArray[i] + ';'+' ';
+            }
+
+            Result.Text = resultString;
+
 
         }
         
