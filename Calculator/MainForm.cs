@@ -15,12 +15,14 @@ namespace Calculator
 
         private double StringToDouble(string text)
         {
+            double result;
+            return result = double.Parse(text);
             return double.Parse(text);
         }
 
         private void SortingMassiv(object sender, EventArgs e)
         {
-           string [] split = FirstArgument.Text.Split(new Char[]{' ', ';'});
+           string [] split = FirstArgument.Text.Split(new Char[]{' '});
            double[] array = new double[split.Length];
 
             for (int i = 0; i < split.Length; i++)
@@ -43,7 +45,7 @@ namespace Calculator
 
             for (int i = 0; i < resultStringArray.Length; i++)
             {
-                resultString += resultStringArray[i] + ';'+' ';
+                resultString += resultStringArray[i] +' ';
             }
 
             Result.Text = resultString;

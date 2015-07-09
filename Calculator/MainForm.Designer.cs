@@ -41,6 +41,8 @@
             this.Factorial = new System.Windows.Forms.Button();
             this.Pow = new System.Windows.Forms.Button();
             this.Radical = new System.Windows.Forms.Button();
+            this.SelectionSorting = new System.Windows.Forms.Button();
+            this.BubbleSorting = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Addition
@@ -85,10 +87,10 @@
             // 
             // Result
             // 
-            this.Result.Location = new System.Drawing.Point(339, 12);
+            this.Result.Location = new System.Drawing.Point(342, 2);
             this.Result.Multiline = true;
             this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(82, 129);
+            this.Result.Size = new System.Drawing.Size(82, 189);
             this.Result.TabIndex = 4;
             // 
             // SecondArgument
@@ -167,11 +169,33 @@
             this.Radical.UseVisualStyleBackColor = true;
             this.Radical.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
+            // SelectionSorting
+            // 
+            this.SelectionSorting.Location = new System.Drawing.Point(12, 145);
+            this.SelectionSorting.Name = "SelectionSorting";
+            this.SelectionSorting.Size = new System.Drawing.Size(60, 36);
+            this.SelectionSorting.TabIndex = 13;
+            this.SelectionSorting.Text = "SelectionSorting";
+            this.SelectionSorting.UseVisualStyleBackColor = true;
+            this.SelectionSorting.Click += new System.EventHandler(this.SortingMassiv);
+            // 
+            // BubbleSorting
+            // 
+            this.BubbleSorting.Location = new System.Drawing.Point(78, 145);
+            this.BubbleSorting.Name = "BubbleSorting";
+            this.BubbleSorting.Size = new System.Drawing.Size(60, 36);
+            this.BubbleSorting.TabIndex = 14;
+            this.BubbleSorting.Text = "BubbleSorting";
+            this.BubbleSorting.UseVisualStyleBackColor = true;
+            this.BubbleSorting.Click += new System.EventHandler(this.SortingMassiv);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(430, 153);
+            this.ClientSize = new System.Drawing.Size(426, 193);
+            this.Controls.Add(this.BubbleSorting);
+            this.Controls.Add(this.SelectionSorting);
             this.Controls.Add(this.Radical);
             this.Controls.Add(this.Pow);
             this.Controls.Add(this.Factorial);
@@ -209,6 +233,8 @@
         private System.Windows.Forms.Button Factorial;
         private System.Windows.Forms.Button Pow;
         private System.Windows.Forms.Button Radical;
+        private System.Windows.Forms.Button SelectionSorting;
+        private System.Windows.Forms.Button BubbleSorting;
     }
 }
 
